@@ -1,0 +1,416 @@
+---
+---
+@import 'bootstrap/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Taviraj:wght@400;500;600&display=swap');
+
+//GLOBAL CSS
+html {
+    scroll-behavior: smooth;
+}
+
+//typo
+h1, h2, h3, h4 {
+    font-family: 'Taviraj', sans-serif;
+    font-weight: 500;
+    color: #D1352A;
+}
+
+a {
+    font-weight: 700;
+    transition: all .25s ease-in-out; 
+}
+
+//buttons
+.btn {
+    width: 150px;
+    background-color: #D1352A;
+    border: 2px solid #D1352A;
+    
+    border-radius: 30px;
+    color: #fff;
+    transition: all .2s; 
+}
+
+.btn:hover {
+    transform: scale(1.1
+    );
+    color: #fff;
+}
+
+//material icons
+.material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+//cards
+.card-link:hover {
+
+    text-decoration: none;
+
+}
+
+.card {
+    height: 100%;
+    transition: all .2s; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .card-body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        small {
+            text-transform: capitalize;
+        }
+    
+    }
+     
+}
+
+//carousel css
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23442C1D' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23442C1D' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+//navbar css
+.navbar-light .navbar-nav .nav-link {
+
+    opacity: 0.9;
+
+    &:hover {
+        color: #442C1D;
+        opacity: 1;
+    }
+
+}
+
+.container-fluid {
+    overflow:auto;
+}
+
+//contact css
+#contact {
+    background-color: #F6EEE3;
+}
+
+//footer css
+footer {
+
+    a {
+        opacity: 0.5;
+    }
+
+    a:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        color: #442C1D;
+    }
+
+
+}
+
+//desc list css
+dl {
+    font-size: 0.8rem;
+}
+
+//INDEX CSS
+
+//hero css
+#hero {
+    background-color: #F6EEE3;
+    margin-top: 0 !important;
+
+    div.row {
+        align-items: center;
+    }
+
+    img {
+        
+        width: 100%;
+        
+    }
+
+    .col-md-6 {
+        align-items: center;
+        display: flex;
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+    .hero-text {
+        width: 70%;
+    }
+
+    .hero-text .subtitle {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 576px)
+    {
+
+        img {
+            width: 50%;
+        }
+
+        .btn {
+
+            width: 100%;
+        
+        }
+
+        .hero-text {
+            width: 100%;
+        }
+
+    }
+
+}
+
+
+//image overlay
+.background-element {
+
+    height: 20px;
+    overflow: visible;
+    background-color: #fff;
+
+    img {
+        position: relative;
+        z-index: 99999;    
+    }
+
+    img#leaf {
+        width: 150px;
+        margin-top: -40px;
+        transform: rotate(10deg);
+    }
+
+    img#hand{
+        height: 180px;
+        margin-top: -50px;
+        transform: rotate(20deg);
+    }
+
+    &.bg-grey {
+        background-color: #F9F8F6;
+    }
+
+    &.bg-grey > div {
+        text-align: left;
+    }
+
+
+    @media screen and (max-width: 576px)
+    {
+        &.bg-beige {
+            height: 70px;
+        }
+
+        img#leaf {
+            width: 150px;
+            margin-top: -20px;
+        }
+
+        img#hand{
+            margin-top: -20px;
+            height: 150px;
+        }
+
+        &.bg-grey > div {
+            text-align: center;
+        }
+        
+    }
+
+}
+
+//INDIV WORK CSS
+
+//works css
+.works {
+
+    .back {
+    
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        transition: all .2s;
+        
+        a:hover {
+            text-decoration: none;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #442C1D;
+        }
+    }
+
+    small {
+        text-transform: capitalize;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .work-img {
+
+        position: relative;
+
+        iframe {
+            height: 400px;
+        }
+
+        @media screen and (max-width: 576px)
+        {
+
+            iframe {
+                height: 200px;
+            }
+            
+        }
+
+        .overlay {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            opacity: 0;
+            transition: opacity .25s ease-in-out; 
+
+        }
+
+        .link {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+            opacity: 0;
+            transition: opacity .25s ease-in-out; 
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        &:hover .overlay {
+            opacity: 0.6;
+        }
+
+        &:hover .link {
+            opacity: 1;
+        }
+
+
+    }
+
+}
+
+//case study css
+.casestudy {
+	
+	iframe {
+	
+		max-width: 100%;
+		margin-bottom: 1rem;
+	
+	}
+	
+}
+
+	//zoom css
+	.zi-p {
+	
+		position: relative;
+		cursor: pointer;
+		margin-bottom: 1rem;
+		
+		&:hover:after {
+			
+			opacity: 1;
+		
+		}
+		
+		img {
+		
+			max-width: 100%;
+		
+		}
+		
+		&::after {
+		content: '';
+		background-image: url('../images/zoomin.svg');
+		background-size: cover;
+		display: inline-block;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		right: 25px;
+		bottom: 25px;
+		padding: 10px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0;
+		color: white;
+		transition: opacity 0.3s;
+		box-shadow: 0 0 6px 1px #efefef;
+		}
+	}
+	
+	#zoom-modal {
+	
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(0, 0, 0, 0.7);
+	  z-index: 2;
+	  cursor: pointer;
+
+	  img {
+	  
+		max-width:100%;
+		max-height:100%;
+		height: auto;
+		width:auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+}
+}
+
+
+//attr ss 
+.attr a {
+    font-weight: 400;
+}
+
